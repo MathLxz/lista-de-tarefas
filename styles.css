@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #131315;
+}
+.container {
+  margin-top: 2rem;
+  box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 5rem;
+}
+
+.form-control {
+  width: 30rem;
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: rgba(143, 124, 236, 0.7);
+}
+.form-control:focus{
+  border-color: rgba(143, 124, 236, 0.7);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(143, 124, 236, 0.7)
+}
+#tarefa::placeholder {
+  color: rgba(143, 124, 236, 0.7);
+}
+
+#tarefa:focus::placeholder {
+  color: black;
+}
+#time {
+  width: 9rem;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background-color: rgba(143, 124, 236, 0.7);
+  border-radius: 5px;
+}
+
+.tarefas {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+.tarefas > p {
+  font-size: 1.6rem;
+  color: rgba(143, 124, 236, 0.7);
+}
+
+.btn {
+  font-size: 1.6rem;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(143, 124, 236, 0.7);
+}
+#add{
+  color: rgba(143, 124, 236, 0.7);
+}
+#add:hover{
+  color: black;
+}
