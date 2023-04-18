@@ -44,7 +44,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .table-bordered > tbody > tr > td {
   border: 0.1rem solid rgba(143, 124, 236, 0.7);
 }
-
+td.concluida {
+  color: #129e12;
+}
 /* RESPONSIVIDADE */
 @media (min-width: 578px) {
   .formulario {
@@ -62,8 +64,5 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin: 0 auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-  }
-  .td-btn {
-    width: 15%;
   }
 }
