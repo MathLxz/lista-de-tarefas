@@ -1,9 +1,9 @@
 <!-- Codigo da estrutura da tabela -->
 
 <!-- CREATE TABLE `lista-de-tarefas`. (`id` INT NOT NULL AUTO_INCREMENT , 
-`nome` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , 
-`hora` TIME NOT NULL , 
-`estado` VARCHAR(2) NOT NULL DEFAULT 'A' , 
+`nome_tarefa` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , 
+`hora_tarefa` TIME NOT NULL , 
+`estado_tarefa` VARCHAR(2) NOT NULL DEFAULT 'A' , 
 PRIMARY KEY (`id`)) ENGINE = InnoDB; -->
 
 <?php
