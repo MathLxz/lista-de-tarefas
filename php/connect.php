@@ -1,6 +1,6 @@
 <!-- Codigo da estrutura da tabela -->
 
-<!-- CREATE TABLE `lista-de-tarefas`. (`id` INT NOT NULL AUTO_INCREMENT , 
+<!-- CREATE TABLE `tarefas` (`id` INT NOT NULL AUTO_INCREMENT , 
 `nome_tarefa` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , 
 `hora_tarefa` TIME NOT NULL , 
 `estado_tarefa` VARCHAR(2) NOT NULL DEFAULT 'A' , 
