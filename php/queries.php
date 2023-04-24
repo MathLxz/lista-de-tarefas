@@ -1,20 +1,27 @@
 <?php
+//Define 'id_usuario_fk' igual a variavel global 'id_usuario' para ser usada aqui no insert e tambem no select
+$id_usuario_fk = $_SESSION['id_usuario'];
+?>
+
+<?php
 //Insert das tarefas no banco de dados
-if (isset($_POST['tarefa'])) {
+if (isset($_POST['tarefa'],$_POST['hora'])) {
     $tarefa = filter_input(INPUT_POST, 'tarefa', FILTER_DEFAULT);
     $hora = filter_input(INPUT_POST, 'hora', FILTER_DEFAULT);
-    $query = "INSERT INTO tarefas (nome_tarefa, hora_tarefa) VALUES (:nome_tarefa, :hora_tarefa)";
+	$query = "INSERT INTO tarefas (nome_tarefa, hora_tarefa, id_usuario_fk) VALUES (:nome_tarefa, :hora_tarefa, :id_usuario_fk)";
     $insere_tarefa = $conn->prepare($query);
     $insere_tarefa->bindParam(':nome_tarefa', $tarefa);
     $insere_tarefa->bindParam(':hora_tarefa', $hora);
+    $insere_tarefa->bindParam(':id_usuario_fk', $id_usuario_fk);
     $insere_tarefa->execute();
 }
 ?>
 
 <?php
-//Select das tarefas para exibição 
-$query = "SELECT * FROM tarefas";
+//Select das tarefas para exibição / Gus: inclui o id_usuario_fk
+$query = "SELECT * FROM tarefas WHERE id_usuario_fk = '$id_usuario_fk'";
 $tarefa = $conn->query($query)->fetchAll();
+
 ?>
 
 <?php
