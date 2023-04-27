@@ -1,0 +1,53 @@
+html {
+  /* Redimensiona o tamanho geral das fontes */
+  font-size: 62.5%;
+}
+body {
+  background-color: #131315;
+}
+
+.form-cad {
+  width: 75%;
+  margin: 0 auto;
+}
+.form-cad p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form-control,
+.btn,
+.table {
+  font-size: 1.6rem;
+}
+.form-control {
+  background-color: transparent;
+  color: rgba(143, 124, 236, 0.7);
+}
+.form-control:focus {
+  border-color: rgba(143, 124, 236, 0.7);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(143, 124, 236, 0.7);
+}
+.form-input::placeholder {
+  color: rgba(143, 124, 236, 0.7);
+}
+
+.btn {
+  width: 100%;
+  color: rgba(143, 124, 236, 0.7);
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 578px) {
+  .login-btn {
+    width: 20%;
+    margin: 0 auto;
+  }
+  .formulario {
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
