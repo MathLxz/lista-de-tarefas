@@ -5,16 +5,16 @@ html {
 body {
   background-color: #131315;
 }
-
-.form-cad {
+/* Referente ao formuladio de cadastro */
+.form-cad-section {
   width: 75%;
   margin: 0 auto;
 }
-.form-cad p {
+.form-cad-section p {
   font-size: 1.8rem;
   text-align: center;
 }
-
+/* Classes padrões do Bootstrap */
 .form-control,
 .btn,
 .table {
@@ -44,7 +44,7 @@ body {
     width: 20%;
     margin: 0 auto;
   }
-  .formulario {
+  .form-cad {
     width: 20%;
     margin: 0 auto;
     padding-top: 0.5rem;

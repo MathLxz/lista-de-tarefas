@@ -24,23 +24,23 @@ if ((isset($_SESSION['email']) == true) and (isset($_SESSION['senha']) == true))
 	</head>
 
 	<body>
-		
+
 		<!-- Section de cadastro -->
-		<section class="mt-5 mb-5 form-cad">
-			<form method="post" id="formulario" class="formulario" action="">
-				<div class="col-12 mb-2" id="txt-task-div">
+		<section class="mt-5 mb-5 form-cad-section">
+			<form method="post" id="formulario" class="form-cad" action="">
+				<div class="col-12 mb-2">
 					<input type="text" name="nome" class="form-control form-input" placeholder="Nome" required="required" />
 				</div>
-				<div class="col-12 mb-2" id="txt-task-div">
+				<div class="col-12 mb-2">
 					<input type="text" name="email" class="form-control form-input" placeholder="Email" required="required" />
 				</div>
-				<div class="col-12 mb-2" id="txt-task-div">
+				<div class="col-12 mb-2" >
 					<input type="password" name="senha" class="form-control form-input" placeholder="Senha" required="required" />
 				</div>
-				<div class="col-12 mb-2" id="txt-task-div">
+				<div class="col-12 mb-2">
 					<input type="password" name="senha_dois" class="form-control form-input" placeholder="Senha novamente" required="required" />
 				</div>
-				<div class="col-12" id="btn-add">
+				<div class="col-12">
 					<button type="submit" class="btn btn-outline-light">Cadastrar</button>
 				</div>
 			</form>
