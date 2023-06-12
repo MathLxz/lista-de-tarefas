@@ -21,7 +21,6 @@ if (isset($_POST['tarefa'],$_POST['hora'])) {
 //Select das tarefas para exibição / Gus: inclui o id_usuario_fk
 $query = "SELECT * FROM tarefas WHERE id_usuario_fk = '$id_usuario_fk'";
 $tarefa = $conn->query($query)->fetchAll();
-
 ?>
 
 <?php

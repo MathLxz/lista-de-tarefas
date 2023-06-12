@@ -14,8 +14,6 @@ if (isset($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['senha_dois']
 	$id_usuario = null;
 	
 	//Conta a quantidade de linhas encontradas
-	//Aqui nao funciona o mysqli_num_rows nao sei porque :(
-	//Dai inventei essa kkkkk
 	$row = 0;
 	foreach ($item as $i){
 		$row += 1;
